@@ -1,0 +1,33 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+class Book {
+    String title;
+    String author;
+    // ... other book attributes
+}
+
+class Borrower {
+    String name;
+    // ... other borrower attributes
+}
+
+public class Library {
+    ArrayList<Book> books;
+    ArrayList<Borrower> borrowers;
+    // ... lending records
+
+    public static void main(String[] args) {
+        Library library = new Library();
+        Scanner scanner = new Scanner(System.in);
+
+        while (true) {
+            // Display menu options
+            System.out.println("1. Add book");
+            // ... other options
+
+            int choice = scanner.nextInt();
+            // ... handle user input based on choice
+        }
+    }
+}
